@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Hunter Davis",
-    "label": "Programmer",
+    "label": "Programmer, Author, Composer",
     "picture": "http://www.hunterdavis.com/wp-content/uploads/2007/12/hunterdavisqr.png",
     "email": "hunter@hunterdavis.com",
     "phone": "available upon request",
@@ -101,7 +101,8 @@
       "keywords": [
         "90+ complete apps on GIthub ",
         "70+ full Android applications open sourced",
-        "Featured Author on opensource.com"
+        "Featured author on opensource.com",
+        "www.hunterdavis.com -> personal hacking and software blog since 2000."
       ]
     }
   ],
@@ -113,10 +114,10 @@
   ],
   "interests": [
     {
-      "name": "Wildlife",
+      "name": "Music",
       "keywords": [
-        "Ferrets",
-        "Unicorns"
+        "guitar building",
+        "composing"
       ]
     }
   ],
