@@ -45,41 +45,28 @@
       ]
     }
   ],
-  "volunteer": [
-    {
-      "organization": "CoderDojo",
-      "position": "Teacher",
-      "website": "http://coderdojo.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Global movement of free coding clubs for young people.",
-      "highlights": [
-        "Awarded 'Teacher of the Month'"
-      ]
-    }
-  ],
+  "volunteer": [],
   "education": [
     {
-      "institution": "University of Oklahoma",
-      "area": "Information Technology",
-      "studyType": "Bachelor",
-      "startDate": "2011-06-01",
-      "endDate": "2014-01-01",
-      "gpa": "4.0",
-      "courses": [
-        "DB1101 - Basic SQL",
-        "CS2011 - Java Introduction"
-      ]
-    }
-  ],
-  "awards": [
+      "institution": "Indiana University",
+      "area": "Computer Science",
+      "studyType": "Masters, focus in Scientific Computing and Artificial Intelligence",
+      "startDate": "2005-08-01",
+      "endDate": "2007-05-01",
+      "gpa": "",
+      "courses": []
+    },
     {
-      "title": "Digital Compression Pioneer Award",
-      "date": "2014-11-01",
-      "awarder": "Techcrunch",
-      "summary": "There is no spoon."
+      "institution": "University Of Evansville",
+      "area": "Computer Science",
+      "studyType": "Awarded \"Most Outstanding Project in Computer Science\" for senior project.",
+      "startDate": "1999-07-01",
+      "endDate": "2003-05-01",
+      "gpa": "",
+      "courses": []
     }
   ],
+  "awards": [],
   "publications": [
     {
       "name": "Video compression for 3d media",
