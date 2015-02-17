@@ -78,21 +78,30 @@
   ],
   "skills": [
     {
-      "name": "Web Development",
-      "level": "Master",
+      "name": "Android Development",
+      "level": "Professional",
       "keywords": [
-        "HTML",
-        "CSS",
-        "Javascript"
+        "I've published (personally, as Hunter Davis) over 80 apps to the Google Play store.",
+        "250,000+ downloads",
+        "50,000 active users year over year"
       ]
     },
     {
-      "name": "Compression",
-      "level": "Master",
+      "name": "Hacking",
+      "level": "Person of Interest",
       "keywords": [
-        "Mpeg",
-        "MP4",
+        "Engadget called one of my works \"a masterpiece\"",
+        "Zipit,",
         "GIF"
+      ]
+    },
+    {
+      "name": "Open Source Advocate",
+      "level": "Lover of Open Source",
+      "keywords": [
+        "90+ complete apps on GIthub ",
+        "70+ full Android applications open sourced",
+        "Featured Author on opensource.com"
       ]
     }
   ],
