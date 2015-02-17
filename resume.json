@@ -1,4 +1,4 @@
-{
+﻿{
   "basics": {
     "name": "Hunter Davis",
     "label": "Programmer, Author, Entrepeneur, Composer",
@@ -41,12 +41,12 @@
       "endDate": "Currently Employed",
       "summary": "Rhapsody is a music streaming service company.  I serve as one of the senior android engineers.  I mentor junior employees and Implement our fundamental architecture. Recent highlights include encryption algorithms, threading and inter-process messaging architecture. waveform equalization.",
       "highlights": [
-        "Architected encryption and security architecture.",
+        "Designed and built encryption and security architecture.",
         "Three patent applications currently in review.",
         "Teach a fundamentals of Computer Science with a focus on Android course weekly.",
-        "Architected and implemented 3rd party Rhapsody implementations with Audi, Ford, Fan.tv, and more",
+        " Designed and built and implemented 3rd party Rhapsody implementations with Audi, Ford, Fan.tv, and more",
         "Mentor junior employees and provide assistance with career advancement.",
-        "Created the company mentorship program.",
+        "Created the company mentoring program.",
         "Java"
       ]
     },
@@ -59,10 +59,10 @@
       "summary": "Lead developer and architect for all Android Products at Miso Media, a music start-up funded by Google Ventures and 500 Startups.",
       "highlights": [
         "Ported Miso Media's proprietary Tuner from objective-C to Java.",
-        "Ported, optimized, and re-factored proprietary Fourier transofrms, openGL code, and patent-pending pitch-detection algorithms.",
+        "Ported, optimized, and re-factored proprietary Fourier transforms, openGL code, and patent-pending pitch-detection algorithms.",
         "Led iOS and Android hackathon teams at TechCrunch Disrupt SF 2011",
-        "Ported Fourier transforms and pitch detection algorithms to javascript.",
-        "C/C++?Java/Javascript/HTML5/OpenGL"
+        "Ported Fourier transforms and pitch detection algorithms to JavaScript.",
+        "C/C++?Java/JavaScript/HTML5/OpenGL"
       ]
     },
     {
@@ -98,7 +98,7 @@
     {
       "company": "IU Bloomington",
       "position": "Research Assistant, Associate Instructor",
-      "website": "indiana.edu",
+      "website": "www.indiana.edu",
       "startDate": "8-1-2005",
       "endDate": "7-1-2007",
       "summary": "Research assistant in scientific computing lab.  Associate Instructor",
@@ -160,7 +160,7 @@
       "publisher": "Amazon",
       "releaseDate": "2011-03-08",
       "website": "http://www.hunterdavis.com/books/live-for-free-ebook/",
-      "summary": "Live For Free is an ebook I wrote and distributed in part on www.liveforfree.net from 2008 to 2010. In it, I chronicle the trials and tips I accumulated whilst saving for my startup, Discursive Labs. In a series of 27 easy to digest chapters, I detail the methodologies and money saving practices which allowed me to \"live for free\" and save the capital necessary to bootstrap a successful startup. From selling items online with eBay and Craigslist, to gauging market fluctuations and historical pricing metrics, these concrete examples can help you save tremendous amounts of money, while still living the cutting edge high tech lifestyle. An enjoyable afternoon read, I present you this eBook in the hopes that it helps you, in a concrete and direct fashion, achieve your dream. It helped me achieve mine."
+      "summary": "Live For Free is an ebook I wrote and distributed in part on www.liveforfree.net from 2008 to 2010. In it, I chronicle the trials and tips I accumulated whilst saving for my startup, Discursive Labs. In a series of 27 easy to digest chapters, I detail the methodologies and money saving practices which allowed me to \"live for free\" and save the capital necessary to bootstrap a successful startup. From selling items on-line with eBay and Craigslist, to gauging market fluctuations and historical pricing metrics, these concrete examples can help you save tremendous amounts of money, while still living the cutting edge high tech lifestyle. An enjoyable afternoon read, I present you this eBook in the hopes that it helps you, in a concrete and direct fashion, achieve your dream. It helped me achieve mine."
     },
     {
       "name": " Build Your Own Distributed Compilation Cluster",
@@ -174,7 +174,7 @@
       "publisher": "Grid Enabled Remote Instrumentation",
       "releaseDate": "",
       "website": "ISBN 9 7 8 - 0 - 3 8 7 - 0 9 6 6 2 - 9",
-      "summary": "Overview publication on research and implementation of scientic computing middleware"
+      "summary": "Overview publication on research and implementation of scientific computing middleware"
     }
   ],
   "skills": [
@@ -182,7 +182,7 @@
       "name": "Android Development",
       "level": "Professional",
       "keywords": [
-        "I've published (personally, as Hunter Davis) over 80 apps to the Google Play store.",
+        "I've published (personally, as Hunter Davis) over 80 applications to the Google Play store.",
         "250,000+ downloads",
         "50,000 active users year over year",
         "Java/C++/etc"
@@ -229,8 +229,16 @@
   ],
   "references": [
     {
-      "name": "Erlich Bachman",
-      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+      "name": "Tarun Bhatia",
+      "reference": "Hunter is a team player who constantly raises the bar. He is always there to answer your questions or offer suggestions with a smile regardless of how busy he might be. His efforts in delivering a great product are equally appreciated. In a hyper competitive environment, he brings the entrepreneurial skills most companies like to see in their employees. He will be a great asset to any team."
+    },
+    {
+      "name": "Joy Liu",
+      "reference": "Hunter is the by far the most well-rounded programmer I have ever worked with. He is extremely knowledgeable on Android and web platforms; if you ask him a question, he always has an solution to it. I cannot complement enough about his time management skills; in this case, his hour-by-hour project plan helped our team to pull through a dual-platform AR hack in 18 hours. As a designer, it is a great pleasure to work with Hunter and see your concepts come alive in a good solid working build. I have no doubt in his skills and ability to build impressive softwares and leading his team under tight deadlines."
+    },
+    {
+      "name": "Moiz Alam",
+      "reference": "Hunter is an excellent computer scientist who is an expert in a wide variety of areas, including HPC, system architecture, and algorithmic development. Furthermore, he is a great mentor to me at my current company, and is actively involved in idea creation and improving the company's bottom line. He is passionate in all of his endeavors, as evidenced by his website, and his work has been showcased on websites such as hack-a-day and endgadget. I recommend him for any high-power computer science work in general."
     }
   ]
 }
