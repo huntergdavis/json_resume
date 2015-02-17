@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Hunter Davis",
-    "label": "Programmer, Author, Composer",
+    "label": "Programmer, Author, Entrepeneur, Composer",
     "picture": "http://www.hunterdavis.com/wp-content/uploads/2007/12/hunterdavisqr.png",
     "email": "hunter@hunterdavis.com",
     "phone": "available upon request",
     "website": "www.hunterdavis.com",
-    "summary": " I write books, release software, hack on hardware, ponder ideas and generally have a good time. ",
+    "summary": " I write books, release software, hack on hardware, ponder ideas and generally have a good time.",
     "location": {
       "address": "13324 3rd ave NE",
       "postalCode": "98125",
@@ -76,9 +76,30 @@
     {
       "name": "Hacks...",
       "publisher": "Amazon",
-      "releaseDate": "2014-10-01",
-      "website": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
-      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
+      "releaseDate": "2011-03-14",
+      "website": "http://www.hunterdavis.com/books/ebook-hacks-from-hunter-davis/",
+      "summary": "Hacks is a collection of my most popular tutorials, scripts, tweaks, Zipit Z2 work, and source code. Within these forty some chapters reside some of my most interesting work, and certainly some of the most viewed tutorials and hacks on the Internet today. Featured on Hackaday, Engadget, Make online, and hundreds of other blogs and forums, these hacks are meant to enlighten and entertain while providing the reader with concrete examples and launching platforms for future work. Whether you are wanting to reorganize your desktop, reboot your modem, port software to a new platform, administer a Linux box, or just entertain yourself on a lazy sunday, you’ll find something of interest in the chapters ahead. It’s a terrific bargain and an excellent reference guide."
+    },
+    {
+      "name": "Live For Free",
+      "publisher": "Amazon",
+      "releaseDate": "2011-03-08",
+      "website": "http://www.hunterdavis.com/books/live-for-free-ebook/",
+      "summary": "Live For Free is an ebook I wrote and distributed in part on www.liveforfree.net from 2008 to 2010. In it, I chronicle the trials and tips I accumulated whilst saving for my startup, Discursive Labs. In a series of 27 easy to digest chapters, I detail the methodologies and money saving practices which allowed me to \"live for free\" and save the capital necessary to bootstrap a successful startup. From selling items online with eBay and Craigslist, to gauging market fluctuations and historical pricing metrics, these concrete examples can help you save tremendous amounts of money, while still living the cutting edge high tech lifestyle. An enjoyable afternoon read, I present you this eBook in the hopes that it helps you, in a concrete and direct fashion, achieve your dream. It helped me achieve mine."
+    },
+    {
+      "name": " Build Your Own Distributed Compilation Cluster",
+      "publisher": "Amazon",
+      "releaseDate": "2011-03-09",
+      "website": "http://www.hunterdavis.com/books/build-your-own-distributed-compilation-cluster-ebook/",
+      "summary": "My second eBook, Build Your Own Distributed Compilation Cluster – A Practical Walkthrough is a collected volume of my article series of the same name. Throughout the 6 in-depth how-to articles, I’ll take you through the process of building a fully working cross-compilation distributed build system. The canonical example is of building a distributed ARM to X86-64 cross-compilation cluster. This system is also generic enough to apply to most any compilation environment, while remaining powerful enough to outperform all but the most advanced compilation systems. With source code examples provided and easy step by step instructions, this 60+ page instructional eBook is a valuable introductory and practical resource for those interested in distributed compilation, cross compilation, low power computing clusters, and so much more. It’s also one terrific bargain, and an excellent reference. "
+    },
+    {
+      "name": "The Common Instrument Middleware Architecture",
+      "publisher": "Grid Enabled Remote Instrumentation",
+      "releaseDate": "",
+      "website": "ISBN 9 7 8 - 0 - 3 8 7 - 0 9 6 6 2 - 9",
+      "summary": "Overview publication on research and implementation of scientic computing middleware"
     }
   ],
   "skills": [
