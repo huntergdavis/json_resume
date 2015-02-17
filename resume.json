@@ -38,7 +38,7 @@
       "position": "Senior Android Engineer",
       "website": "www.rhapsody.com",
       "startDate": "2012-5-22",
-      "endDate": "n/a",
+      "endDate": "Currently Employed",
       "summary": "Rhapsody is a music streaming service company.  I serve as one of the senior android engineers.  I mentor junior employees and Implement our fundamental architecture. Recent highlights include encryption algorithms, threading and inter-process messaging architecture. waveform equalization.",
       "highlights": [
         "Architected encryption and security architecture.",
@@ -46,8 +46,83 @@
         "Teach a fundamentals of Computer Science with a focus on Android course weekly.",
         "Architected and implemented 3rd party Rhapsody implementations with Audi, Ford, Fan.tv, and more",
         "Mentor junior employees and provide assistance with career advancement.",
-        "Created the company mentorship program."
+        "Created the company mentorship program.",
+        "Java"
       ]
+    },
+    {
+      "company": "Miso Media",
+      "position": "Android Team Lead, Web Team Member",
+      "website": "http://misomedia.com/ (formerly)",
+      "startDate": "8-2011",
+      "endDate": "3-2012",
+      "summary": "Lead developer and architect for all Android Products at Miso Media, a music start-up funded by Google Ventures and 500 Startups.",
+      "highlights": [
+        "Ported Miso Media's proprietary Tuner from objective-C to Java.",
+        "Ported, optimized, and re-factored proprietary Fourier transofrms, openGL code, and patent-pending pitch-detection algorithms.",
+        "Led iOS and Android hackathon teams at TechCrunch Disrupt SF 2011",
+        "Ported Fourier transforms and pitch detection algorithms to javascript.",
+        "C/C++?Java/Javascript/HTML5/OpenGL"
+      ]
+    },
+    {
+      "company": "Discursive Labs, LLC",
+      "position": "CEO",
+      "website": "www.discursivelabs.com (former)",
+      "startDate": "6-2010",
+      "endDate": "8-2011",
+      "summary": "CEO and programmer for bootstrapped startup.  ",
+      "highlights": [
+        "Source Tree Visualizer Project",
+        "QuickGrapher Project",
+        "C/C++/HTML 5"
+      ]
+    },
+    {
+      "company": "Scalable Network Technologies",
+      "position": "Senior Software Engineer II",
+      "website": "www.scalable-networks.com",
+      "startDate": "7-2007",
+      "endDate": "7-2010",
+      "summary": "Worked with and lead highly technical groups within all teams in company.",
+      "highlights": [
+        "  Lead military integration events and demos at DoD centers",
+        "  Increased visibility to high profile military leaders.",
+        "Reverse engineered protocols and implemented new interfaces to military and commodity hardware.",
+        "Interviewed candidates and advised CEO on hiring technical leads.",
+        "Kernel level developer. ",
+        "Team Lead",
+        "C/C++"
+      ]
+    },
+    {
+      "company": "IU Bloomington",
+      "position": "Research Assistant, Associate Instructor",
+      "website": "indiana.edu",
+      "startDate": "8-1-2005",
+      "endDate": "7-1-2007",
+      "summary": "Research assistant in scientific computing lab.  Associate Instructor",
+      "highlights": []
+    },
+    {
+      "company": "Thermwood Corporation",
+      "position": "Developer",
+      "website": "www.thermwood.com",
+      "startDate": "5-1-2003",
+      "endDate": "5-1-2005",
+      "summary": " Developer for eCabinet Systems, a 3d cad system for cabinet makers.",
+      "highlights": [
+        "C/C++/OpenGL"
+      ]
+    },
+    {
+      "company": "ARS-Group",
+      "position": "Programmer",
+      "website": "www.ars-group.com",
+      "startDate": "2-1-2001",
+      "endDate": "4-1-2002",
+      "summary": "Web programmer and general purpose programmer.",
+      "highlights": []
     }
   ],
   "volunteer": [],
@@ -109,7 +184,8 @@
       "keywords": [
         "I've published (personally, as Hunter Davis) over 80 apps to the Google Play store.",
         "250,000+ downloads",
-        "50,000 active users year over year"
+        "50,000 active users year over year",
+        "Java/C++/etc"
       ]
     },
     {
@@ -120,7 +196,9 @@
         "Popular Hacks: Zipit, Dockstar, im-me",
         "Reverse Engineering",
         "im-me",
-        "65 apps in 60 days"
+        "65 apps in 60 days",
+        "Featured on the front page of Engadget, Hackaday, boingBoing, Make, Wired, and numerous others.",
+        "Featured in print in WebDeveloper UK, Webdeveloper IT, and Netrunner Japan maagazine"
       ]
     },
     {
