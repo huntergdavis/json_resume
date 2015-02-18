@@ -6,13 +6,36 @@ import java.util.List;
 public class Work{
    	private String company;
    	private String endDate;
-   	private List highlights;
+   	private List<String> highlights;
    	private String position;
    	private String startDate;
    	private String summary;
    	private String website;
 
- 	public String getCompany(){
+    @Override
+    public String toString() {
+        return "Work{" +
+                "company='" + company + '\'' +
+                ", endDate='" + endDate + '\'' +
+                ", highlights=" + getHighlightListTextually() + '\'' +
+                ", position='" + position + '\'' +
+                ", startDate='" + startDate + '\'' +
+                ", summary='" + summary + '\'' +
+                ", website='" + website + '\'' +
+                '}';
+    }
+
+    public String getHighlightListTextually() {
+        String ret = "";
+
+        for (String highlight : highlights) {
+            ret += (highlight.toString() + "," + '\'');
+        }
+
+        return ret;
+    }
+
+    public String getCompany(){
 		return this.company;
 	}
 	public void setCompany(String company){

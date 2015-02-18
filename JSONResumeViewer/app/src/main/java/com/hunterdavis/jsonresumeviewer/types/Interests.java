@@ -4,10 +4,28 @@ package com.hunterdavis.jsonresumeviewer.types;
 import java.util.List;
 
 public class Interests{
-   	private List keywords;
+   	private List<String> keywords;
    	private String name;
 
- 	public List getKeywords(){
+    @Override
+    public String toString() {
+        return "Interests{" +
+                "keywords=" + getKeywordListTextually() + '\'' +
+                ", name='" + name + '\'' +
+                '}';
+    }
+
+    public String getKeywordListTextually() {
+        String ret = "";
+
+        for (String keyword : keywords) {
+            ret += (keyword.toString() + "," + '\'');
+        }
+
+        return ret;
+    }
+
+    public List getKeywords(){
 		return this.keywords;
 	}
 	public void setKeywords(List keywords){

@@ -7,7 +7,18 @@ public class Awards{
    	private String awarder;
    	private String date;
    	private String summary;
-   	private String title;
+    private String title;
+
+
+    @Override
+    public String toString() {
+        return "Awards{" +
+                "awarder='" + awarder + '\'' +
+                ", date='" + date + '\'' +
+                ", summary='" + summary + '\'' +
+                ", title='" + title + '\'' +
+                '}';
+    }
 
  	public String getAwarder(){
 		return this.awarder;

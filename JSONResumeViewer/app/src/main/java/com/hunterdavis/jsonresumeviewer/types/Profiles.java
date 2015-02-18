@@ -8,7 +8,16 @@ public class Profiles{
    	private String url;
    	private String username;
 
- 	public String getNetwork(){
+    @Override
+    public String toString() {
+        return "Profiles{" +
+                "network='" + network + '\'' +
+                ", url='" + url + '\'' +
+                ", username='" + username + '\'' +
+                '}';
+    }
+
+    public String getNetwork(){
 		return this.network;
 	}
 	public void setNetwork(String network){

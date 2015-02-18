@@ -10,9 +10,34 @@ public class Basics{
    	private String name;
    	private String phone;
    	private String picture;
-   	private List profiles;
+   	private List<Profiles> profiles;
    	private String summary;
    	private String website;
+
+    @Override
+    public String toString() {
+        return "Basics{" +
+                "email='" + email + '\'' +
+                ", label='" + label + '\'' +
+                ", location=" + location +
+                ", name='" + name + '\'' +
+                ", phone='" + phone + '\'' +
+                ", picture='" + picture + '\'' +
+                ", profiles=" + getProfilesListTextually() + '\'' +
+                ", summary='" + summary + '\'' +
+                ", website='" + website + '\'' +
+                '}';
+    }
+
+    public String getProfilesListTextually() {
+        String ret = "";
+
+        for (Profiles profile : profiles) {
+            ret += (profile.toString() + ","+ '\'' );
+        }
+
+        return ret;
+    }
 
  	public String getEmail(){
 		return this.email;

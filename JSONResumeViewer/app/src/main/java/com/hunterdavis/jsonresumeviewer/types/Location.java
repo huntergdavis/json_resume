@@ -10,7 +10,18 @@ public class Location{
    	private String postalCode;
    	private String region;
 
- 	public String getAddress(){
+    @Override
+    public String toString() {
+        return "Location{" +
+                "address='" + address + '\'' +
+                ", city='" + city + '\'' +
+                ", countryCode='" + countryCode + '\'' +
+                ", postalCode='" + postalCode + '\'' +
+                ", region='" + region + '\'' +
+                '}';
+    }
+
+    public String getAddress(){
 		return this.address;
 	}
 	public void setAddress(String address){

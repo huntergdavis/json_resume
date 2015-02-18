@@ -7,7 +7,15 @@ public class Languages{
    	private String fluency;
    	private String language;
 
- 	public String getFluency(){
+    @Override
+    public String toString() {
+        return "Languages{" +
+                "fluency='" + fluency + '\'' +
+                ", language='" + language + '\'' +
+                '}';
+    }
+
+    public String getFluency(){
 		return this.fluency;
 	}
 	public void setFluency(String fluency){

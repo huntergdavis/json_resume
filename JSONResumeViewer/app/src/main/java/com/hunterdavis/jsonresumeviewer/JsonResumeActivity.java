@@ -1,5 +1,6 @@
 package com.hunterdavis.jsonresumeviewer;
 
+import java.io.IOException;
 import java.util.Locale;
 
 import android.support.v7.app.ActionBarActivity;
@@ -17,6 +18,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.hunterdavis.jsonresumeviewer.types.Resume;
 
 
 public class JsonResumeActivity extends ActionBarActivity implements ActionBar.TabListener {
@@ -36,10 +39,19 @@ public class JsonResumeActivity extends ActionBarActivity implements ActionBar.T
      */
     ViewPager mViewPager;
 
+    static Resume resume = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_json_resume);
+
+        try {
+            resume = JsonResumeParser.parseHuntersResume(this);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
 
         // Set up the action bar.
         final ActionBar actionBar = getSupportActionBar();
@@ -181,6 +193,12 @@ public class JsonResumeActivity extends ActionBarActivity implements ActionBar.T
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_json_resume, container, false);
+
+            TextView resumeText = (TextView) rootView.findViewById(R.id.resumeText);
+            if(resume != null) {
+                resumeText.setText(resume.toString());
+            }
+
             return rootView;
         }
     }

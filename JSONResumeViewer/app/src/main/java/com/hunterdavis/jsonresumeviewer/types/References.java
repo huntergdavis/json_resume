@@ -7,7 +7,15 @@ public class References{
    	private String name;
    	private String reference;
 
- 	public String getName(){
+    @Override
+    public String toString() {
+        return "References{" +
+                "name='" + name + '\'' +
+                ", reference='" + reference + '\'' +
+                '}';
+    }
+
+    public String getName(){
 		return this.name;
 	}
 	public void setName(String name){

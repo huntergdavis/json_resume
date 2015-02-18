@@ -10,7 +10,18 @@ public class Publications{
    	private String summary;
    	private String website;
 
- 	public String getName(){
+    @Override
+    public String toString() {
+        return "Publications{" +
+                "name='" + name + '\'' +
+                ", publisher='" + publisher + '\'' +
+                ", releaseDate='" + releaseDate + '\'' +
+                ", summary='" + summary + '\'' +
+                ", website='" + website + '\'' +
+                '}';
+    }
+
+    public String getName(){
 		return this.name;
 	}
 	public void setName(String name){

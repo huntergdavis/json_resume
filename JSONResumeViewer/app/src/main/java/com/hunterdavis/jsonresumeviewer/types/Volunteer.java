@@ -5,14 +5,37 @@ import java.util.List;
 
 public class Volunteer{
    	private String endDate;
-   	private List highlights;
+   	private List<String> highlights;
    	private String organization;
    	private String position;
    	private String startDate;
    	private String summary;
    	private String website;
 
- 	public String getEndDate(){
+    @Override
+    public String toString() {
+        return "Volunteer{" +
+                "endDate='" + endDate + '\'' +
+                ", highlights=" + getHighlightListTextually()  + '\'' +
+                ", organization='" + organization + '\'' +
+                ", position='" + position + '\'' +
+                ", startDate='" + startDate + '\'' +
+                ", summary='" + summary + '\'' +
+                ", website='" + website + '\'' +
+                '}';
+    }
+
+    public String getHighlightListTextually() {
+        String ret = "";
+
+        for (String highlight : highlights) {
+            ret += (highlight.toString() + "," + '\'');
+        }
+
+        return ret;
+    }
+
+    public String getEndDate(){
 		return this.endDate;
 	}
 	public void setEndDate(String endDate){

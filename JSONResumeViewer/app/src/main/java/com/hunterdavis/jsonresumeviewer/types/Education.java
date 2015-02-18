@@ -5,14 +5,38 @@ import java.util.List;
 
 public class Education{
    	private String area;
-   	private List courses;
+   	private List<String> courses;
    	private String endDate;
    	private String gpa;
    	private String institution;
    	private String startDate;
    	private String studyType;
 
- 	public String getArea(){
+    @Override
+    public String toString() {
+        return "Education{" +
+                "area='" + area + '\'' +
+                ", courses="
+                + getCoursesListTextually() +  '\'' +
+                ", endDate='" + endDate + '\'' +
+                ", gpa='" + gpa + '\'' +
+                ", institution='" + institution + '\'' +
+                ", startDate='" + startDate + '\'' +
+                ", studyType='" + studyType + '\'' +
+                '}';
+    }
+
+    public String getCoursesListTextually() {
+        String ret = "";
+
+        for (String course : courses) {
+            ret += (course + "," + '\'');
+        }
+
+        return ret;
+    }
+
+    public String getArea(){
 		return this.area;
 	}
 	public void setArea(String area){
