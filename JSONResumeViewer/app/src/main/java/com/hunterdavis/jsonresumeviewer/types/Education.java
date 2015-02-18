@@ -29,8 +29,10 @@ public class Education{
     public String getCoursesListTextually() {
         String ret = "";
 
-        for (String course : courses) {
-            ret += (course + "," + '\'');
+        if(courses != null) {
+            for (String course : courses) {
+                ret += (course + "," + '\'');
+            }
         }
 
         return ret;

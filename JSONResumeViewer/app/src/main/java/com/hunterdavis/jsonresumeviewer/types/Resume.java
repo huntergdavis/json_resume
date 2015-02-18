@@ -34,8 +34,10 @@ public class Resume{
     public String getWorkListTextually() {
         String ret = "";
 
-        for (Work work1 : work) {
-            ret += (work1.toString() + "," + '\'' );
+        if(work != null) {
+            for (Work work1 : work) {
+                ret += (work1.toString() + "," + '\'');
+            }
         }
 
         return ret;
@@ -44,8 +46,10 @@ public class Resume{
     public String getVolunteerListTextually() {
         String ret = "";
 
-        for (Volunteer volunteer1 : volunteer) {
-            ret += (volunteer1.toString() + "," + '\'');
+        if(volunteer != null) {
+            for (Volunteer volunteer1 : volunteer) {
+                ret += (volunteer1.toString() + "," + '\'');
+            }
         }
 
         return ret;
@@ -54,8 +58,10 @@ public class Resume{
     public String getSkillsListTextually() {
         String ret = "";
 
-        for (Skills skills1 : skills) {
-            ret += (skills1.toString() + "," + '\'');
+        if(skills != null) {
+            for (Skills skills1 : skills) {
+                ret += (skills1.toString() + "," + '\'');
+            }
         }
 
         return ret;
@@ -64,8 +70,10 @@ public class Resume{
     public String getReferencesListTextually() {
         String ret = "";
 
-        for (References references1 : references) {
-            ret += (references1.toString() + "," + '\'');
+        if(references != null) {
+            for (References references1 : references) {
+                ret += (references1.toString() + "," + '\'');
+            }
         }
 
         return ret;
@@ -74,8 +82,10 @@ public class Resume{
     public String getPublicationsListTextually() {
         String ret = "";
 
-        for (Publications publications1 : publications) {
-            ret += (publications1.toString() + "," + '\'');
+        if(publications != null) {
+            for (Publications publications1 : publications) {
+                ret += (publications1.toString() + "," + '\'');
+            }
         }
 
         return ret;
@@ -84,8 +94,10 @@ public class Resume{
     public String geLanguagesListTextually() {
         String ret = "";
 
-        for (Languages languages1 : languages) {
-            ret += (languages1.toString() + "," + '\'');
+        if(languages != null) {
+            for (Languages languages1 : languages) {
+                ret += (languages1.toString() + "," + '\'');
+            }
         }
 
         return ret;
@@ -94,8 +106,10 @@ public class Resume{
     public String getInterestListTextually() {
         String ret = "";
 
-        for (Interests interest : interests) {
-            ret += (interest.toString() + "," + '\'');
+        if(interests != null) {
+            for (Interests interest : interests) {
+                ret += (interest.toString() + "," + '\'');
+            }
         }
 
         return ret;
@@ -104,8 +118,10 @@ public class Resume{
     public String getAwardsListTextually() {
         String ret = "";
 
-        for (Awards award : awards) {
-            ret += (award.toString() + "," + '\'');
+        if(awards != null) {
+            for (Awards award : awards) {
+                ret += (award.toString() + "," + '\'');
+            }
         }
 
         return ret;
@@ -114,8 +130,10 @@ public class Resume{
     public String getEducationListTextually() {
         String ret = "";
 
-        for (Education education1 : education) {
-            ret += (education1.toString() + "," + '\'');
+        if(education != null) {
+            for (Education education1 : education) {
+                ret += (education1.toString() + "," + '\'');
+            }
         }
 
         return ret;

@@ -28,8 +28,10 @@ public class Volunteer{
     public String getHighlightListTextually() {
         String ret = "";
 
-        for (String highlight : highlights) {
-            ret += (highlight.toString() + "," + '\'');
+        if(highlights != null) {
+            for (String highlight : highlights) {
+                ret += (highlight.toString() + "," + '\'');
+            }
         }
 
         return ret;

@@ -18,8 +18,10 @@ public class Interests{
     public String getKeywordListTextually() {
         String ret = "";
 
-        for (String keyword : keywords) {
-            ret += (keyword.toString() + "," + '\'');
+        if(keywords != null) {
+            for (String keyword : keywords) {
+                ret += (keyword.toString() + "," + '\'');
+            }
         }
 
         return ret;

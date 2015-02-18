@@ -32,8 +32,10 @@ public class Basics{
     public String getProfilesListTextually() {
         String ret = "";
 
-        for (Profiles profile : profiles) {
-            ret += (profile.toString() + ","+ '\'' );
+        if(profiles != null) {
+            for (Profiles profile : profiles) {
+                ret += (profile.toString() + "," + '\'');
+            }
         }
 
         return ret;
