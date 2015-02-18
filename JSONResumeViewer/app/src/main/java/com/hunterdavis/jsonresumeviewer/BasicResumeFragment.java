@@ -63,47 +63,58 @@ public class BasicResumeFragment  extends Fragment {
                 if(JsonResumeActivity.resume.getBasics() != null) {
                     return JsonResumeActivity.resume.getBasics().toString();
                 }
+                break;
             case AWARDS:
                 if(JsonResumeActivity.resume.getAwards() != null) {
                     return JsonResumeActivity.resume.getAwardsListTextually().toString();
                 }
+                break;
             case EDUCATION:
                 if(JsonResumeActivity.resume.getEducation() != null) {
                     return JsonResumeActivity.resume.getEducationListTextually().toString();
                 }
+                break;
             case INTERESTS:
                 if(JsonResumeActivity.resume.getInterests() != null) {
                     return JsonResumeActivity.resume.getInterestListTextually().toString();
                 }
+                break;
             case LANGUAGES:
                 if(JsonResumeActivity.resume.getLanguages() != null) {
                     return JsonResumeActivity.resume.getLanguages().toString();
                 }
+                break;
             case PUBLICATIONS:
                 if(JsonResumeActivity.resume.getPublications() != null) {
                     return JsonResumeActivity.resume.getPublicationsListTextually().toString();
                 }
+                break;
             case REFERENCES:
                 if(JsonResumeActivity.resume.getReferences() != null) {
                     return JsonResumeActivity.resume.getReferencesListTextually().toString();
                 }
+                break;
             case SKILLS:
                 if(JsonResumeActivity.resume.getSkills() != null) {
                     return JsonResumeActivity.resume.getSkillsListTextually().toString();
                 }
+                break;
             case VOLUNTEER:
                 if(JsonResumeActivity.resume.getVolunteer() != null) {
                     return JsonResumeActivity.resume.getVolunteerListTextually().toString();
                 }
+                break;
             case WORK:
                 if(JsonResumeActivity.resume.getWork() != null) {
                     return JsonResumeActivity.resume.getWorkListTextually().toString();
                 }
+                break;
             case PROFILES:
                 if(JsonResumeActivity.resume.getBasics() != null) {
                     if(JsonResumeActivity.resume.getBasics().getProfiles() != null)
                     return JsonResumeActivity.resume.getBasics().getProfilesListTextually();
                 }
+                break;
         }
         return "";
     }
