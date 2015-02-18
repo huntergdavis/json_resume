@@ -18,7 +18,6 @@ public class BasicResumeFragment  extends Fragment {
      * fragment.
      */
     private static final String ARG_SECTION_NUMBER = "section_number";
-    Resume resume = null;
 
     /**
      * Returns a new instance of this fragment for the given section
@@ -42,7 +41,7 @@ public class BasicResumeFragment  extends Fragment {
 
         TextView resumeText = (TextView) rootView.findViewById(R.id.resumeText);
         if(JsonResumeActivity.resume != null) {
-            resumeText.setText(resume.toString());
+            resumeText.setText(JsonResumeActivity.resume.toString());
         }
 
         return rootView;
