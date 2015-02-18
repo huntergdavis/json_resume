@@ -2,8 +2,6 @@ package com.hunterdavis.jsonresumeviewer.fragment;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
@@ -19,12 +17,7 @@ import com.hunterdavis.jsonresumeviewer.IconDownloadTask;
 import com.hunterdavis.jsonresumeviewer.JsonResumeActivity;
 import com.hunterdavis.jsonresumeviewer.R;
 import com.hunterdavis.jsonresumeviewer.types.Work;
-import com.squareup.picasso.Picasso;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.util.List;
 
 /**
@@ -50,9 +43,13 @@ public class WorkFragment extends ListFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        WorkAdapter adapter = new WorkAdapter(
-                inflater.getContext(), JsonResumeActivity.resume.getWork());
-        setListAdapter(adapter);
+        if(JsonResumeActivity.resume != null) {
+            if (JsonResumeActivity.resume.getWork() != null) {
+                WorkAdapter adapter = new WorkAdapter(
+                        inflater.getContext(), JsonResumeActivity.resume.getWork());
+                setListAdapter(adapter);
+            }
+        }
 
         return super.onCreateView(inflater, container, savedInstanceState);
     }

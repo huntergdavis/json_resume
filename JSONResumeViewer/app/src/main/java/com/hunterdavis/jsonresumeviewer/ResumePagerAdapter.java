@@ -5,6 +5,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.hunterdavis.jsonresumeviewer.fragment.AwardsFragment;
 import com.hunterdavis.jsonresumeviewer.fragment.BasicsResumeFragment;
 import com.hunterdavis.jsonresumeviewer.fragment.TextResumeFragment;
 import com.hunterdavis.jsonresumeviewer.fragment.WorkFragment;
@@ -33,7 +34,7 @@ public class ResumePagerAdapter extends FragmentPagerAdapter {
             case BASICS:
                 return BasicsResumeFragment.newInstance();
             case AWARDS:
-                break;
+                return AwardsFragment.newInstance();
             case EDUCATION:
                 break;
             case INTERESTS:
