@@ -2,10 +2,19 @@
 <resources>
 
     <string name="app_name">JSON Resume Viewer</string>
-    <string name="title_section1">Section 1</string>
-    <string name="title_section2">Section 2</string>
-    <string name="title_section3">Section 3</string>
-    <string name="hello_world">Hello world!</string>
+
+    <string name="title_basics">Basics</string>
+    <string name="title_awards">Awards</string>
+    <string name="title_education">Education</string>
+    <string name="title_interests">Interests</string>
+    <string name="title_languages">Languages</string>
+    <string name="title_publications">Publications</string>
+    <string name="title_references">References</string>
+    <string name="title_skills">Skills</string>
+    <string name="title_volunteer">Volunteer</string>
+    <string name="title_work">Work</string>
+    <string name="title_profiles">Profiles</string>
+
     <string name="action_settings">Settings</string>
 
 </resources>
