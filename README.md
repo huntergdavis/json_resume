@@ -1,6 +1,8 @@
 # JSON Resume Viewer
 An android application to view resume.JSON files.  
 
+[https://raw.githubusercontent.com/huntergdavis/json_resume/master/screenshots/device-2015-02-18-104936.png]
+
 Use Cases:
 Designer:
 Fork this repo and style the app to be oh so cool.
