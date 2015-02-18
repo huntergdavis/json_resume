@@ -5,7 +5,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.hunterdavis.jsonresumeviewer.fragment.BasicResumeFragment;
+import com.hunterdavis.jsonresumeviewer.fragment.BasicsResumeFragment;
+import com.hunterdavis.jsonresumeviewer.fragment.TextResumeFragment;
 import com.hunterdavis.jsonresumeviewer.fragment.WorkFragment;
 
 import java.util.Locale;
@@ -30,7 +31,7 @@ public class ResumePagerAdapter extends FragmentPagerAdapter {
         switch (section) {
 
             case BASICS:
-                break;
+                return BasicsResumeFragment.newInstance();
             case AWARDS:
                 break;
             case EDUCATION:
@@ -54,7 +55,7 @@ public class ResumePagerAdapter extends FragmentPagerAdapter {
         }
 
             // return our basic resume fragment
-            return BasicResumeFragment.newInstance(section);
+            return TextResumeFragment.newInstance(section);
         }
 
     @Override

@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Locale;
 
+import android.app.Activity;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -39,11 +40,6 @@ public class JsonResumeActivity extends ActionBarActivity implements ActionBar.T
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_json_resume);
 
-        try {
-            resume = JsonResumeParser.parseHuntersResume(this);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
         // implement our okhttp cache for work page.. ugh ico files..!
         int cacheSize = 1024 * 1024; // 1 MiB
@@ -102,13 +98,18 @@ public class JsonResumeActivity extends ActionBarActivity implements ActionBar.T
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
+        if (id == R.id.action_hunter) {
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+            try {
+                resume = JsonResumeParser.parseHuntersResume(this);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+
+            // recreate everything
+            this.recreate();
             return true;
         }
 

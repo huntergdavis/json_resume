@@ -1,7 +1,7 @@
 package com.hunterdavis.jsonresumeviewer;
 
 /**
- * Created by hunter on 2/18/15.
+ * resume sections for the tab adapter
  */
 public enum ResumeSections {
     BASICS,

@@ -12,13 +12,9 @@ public class Location{
 
     @Override
     public String toString() {
-        return "Location{" +
-                "address='" + address + '\'' +
-                ", city='" + city + '\'' +
-                ", countryCode='" + countryCode + '\'' +
-                ", postalCode='" + postalCode + '\'' +
-                ", region='" + region + '\'' +
-                '}';
+        return address + "\n" +
+                city +", "+ region+ " " + postalCode + "\n" +
+                countryCode;
     }
 
     public String getAddress(){
