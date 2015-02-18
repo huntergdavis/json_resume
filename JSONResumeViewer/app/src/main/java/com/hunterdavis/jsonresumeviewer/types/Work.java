@@ -30,7 +30,7 @@ public class Work{
 
         if(highlights != null) {
             for (String highlight : highlights) {
-                ret += (highlight.toString() + "," + '\'');
+                ret += ("> " + highlight.toString() + "\n");
             }
         }
 

@@ -1,5 +1,6 @@
 package com.hunterdavis.jsonresumeviewer;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.Locale;
 
@@ -20,6 +21,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.hunterdavis.jsonresumeviewer.types.Resume;
+import com.squareup.okhttp.Cache;
+import com.squareup.okhttp.OkHttpClient;
 
 
 public class JsonResumeActivity extends ActionBarActivity implements ActionBar.TabListener {
@@ -28,7 +31,8 @@ public class JsonResumeActivity extends ActionBarActivity implements ActionBar.T
     ResumePagerAdapter mResumePagerAdapter;
     ViewPager mViewPager;
 
-    static Resume resume = null;
+    public static Resume resume = null;
+    public static OkHttpClient client = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +45,17 @@ public class JsonResumeActivity extends ActionBarActivity implements ActionBar.T
             e.printStackTrace();
         }
 
+        // implement our okhttp cache for work page.. ugh ico files..!
+        int cacheSize = 1024 * 1024; // 1 MiB
+        File cacheDirectory = new File(getCacheDir().getAbsolutePath(), "HttpCache");
+        Cache cache = null;
+        try {
+            cache = new Cache(cacheDirectory, cacheSize);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        client = new OkHttpClient();
+        client.setCache(cache);
 
         // Set up the action bar.
         final ActionBar actionBar = getSupportActionBar();

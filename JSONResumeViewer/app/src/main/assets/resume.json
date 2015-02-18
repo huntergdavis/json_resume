@@ -36,7 +36,7 @@
     {
       "company": "Rhapsody International",
       "position": "Senior Android Engineer",
-      "website": "www.rhapsody.com",
+      "website": "http://www.rhapsody.com",
       "startDate": "2012-5-22",
       "endDate": "Currently Employed",
       "summary": "Rhapsody is a music streaming service company.  I serve as one of the senior android engineers.  I mentor junior employees and Implement our fundamental architecture. Recent highlights include encryption algorithms, threading and inter-process messaging architecture. waveform equalization.",
@@ -53,7 +53,7 @@
     {
       "company": "Miso Media",
       "position": "Android Team Lead, Web Team Member",
-      "website": "http://misomedia.com/ (formerly)",
+      "website": "https://www.gv.com/",
       "startDate": "8-2011",
       "endDate": "3-2012",
       "summary": "Lead developer and architect for all Android Products at Miso Media, a music start-up funded by Google Ventures and 500 Startups.",
@@ -68,7 +68,7 @@
     {
       "company": "Discursive Labs, LLC",
       "position": "CEO",
-      "website": "www.discursivelabs.com (former)",
+      "website": "http://www.hunterdavis.com",
       "startDate": "6-2010",
       "endDate": "8-2011",
       "summary": "CEO and programmer for bootstrapped startup.  ",
@@ -81,7 +81,7 @@
     {
       "company": "Scalable Network Technologies",
       "position": "Senior Software Engineer II",
-      "website": "www.scalable-networks.com",
+      "website": "http://web.scalable-networks.com/",
       "startDate": "7-2007",
       "endDate": "7-2010",
       "summary": "Worked with and lead highly technical groups within all teams in company.",
@@ -98,7 +98,7 @@
     {
       "company": "IU Bloomington",
       "position": "Research Assistant, Associate Instructor",
-      "website": "www.indiana.edu",
+      "website": "http://www.indiana.edu",
       "startDate": "8-1-2005",
       "endDate": "7-1-2007",
       "summary": "Research assistant in scientific computing lab.  Associate Instructor",
@@ -107,7 +107,7 @@
     {
       "company": "Thermwood Corporation",
       "position": "Developer",
-      "website": "www.thermwood.com",
+      "website": "http://www.thermwood.com",
       "startDate": "5-1-2003",
       "endDate": "5-1-2005",
       "summary": " Developer for eCabinet Systems, a 3d cad system for cabinet makers.",
@@ -118,7 +118,7 @@
     {
       "company": "ARS-Group",
       "position": "Programmer",
-      "website": "www.ars-group.com",
+      "website": "http://www.philipmorrisusa.com/en/cms/home/default.aspx",
       "startDate": "2-1-2001",
       "endDate": "4-1-2002",
       "summary": "Web programmer and general purpose programmer.",

@@ -141,7 +141,7 @@ public class Resume{
 
 
 
-    public List getAwards(){
+    public List<Awards> getAwards(){
 		return this.awards;
 	}
 	public void setAwards(List awards){
@@ -153,49 +153,49 @@ public class Resume{
 	public void setBasics(Basics basics){
 		this.basics = basics;
 	}
- 	public List getEducation(){
+ 	public List<Education> getEducation(){
 		return this.education;
 	}
 	public void setEducation(List education){
 		this.education = education;
 	}
- 	public List getInterests(){
+ 	public List<Interests> getInterests(){
 		return this.interests;
 	}
 	public void setInterests(List interests){
 		this.interests = interests;
 	}
- 	public List getLanguages(){
+ 	public List<Languages> getLanguages(){
 		return this.languages;
 	}
 	public void setLanguages(List languages){
 		this.languages = languages;
 	}
- 	public List getPublications(){
+ 	public List<Publications> getPublications(){
 		return this.publications;
 	}
 	public void setPublications(List publications){
 		this.publications = publications;
 	}
- 	public List getReferences(){
+ 	public List<References> getReferences(){
 		return this.references;
 	}
 	public void setReferences(List references){
 		this.references = references;
 	}
- 	public List getSkills(){
+ 	public List<Skills> getSkills(){
 		return this.skills;
 	}
 	public void setSkills(List skills){
 		this.skills = skills;
 	}
- 	public List getVolunteer(){
+ 	public List<Volunteer> getVolunteer(){
 		return this.volunteer;
 	}
 	public void setVolunteer(List volunteer){
 		this.volunteer = volunteer;
 	}
- 	public List getWork(){
+ 	public List<Work> getWork(){
 		return this.work;
 	}
 	public void setWork(List work){

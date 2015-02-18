@@ -5,6 +5,9 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.hunterdavis.jsonresumeviewer.fragment.BasicResumeFragment;
+import com.hunterdavis.jsonresumeviewer.fragment.WorkFragment;
+
 import java.util.Locale;
 
 /**
@@ -21,10 +24,38 @@ public class ResumePagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        // getItem is called to instantiate the fragment for the given page.
-        // Return a PlaceholderFragment (defined as a static inner class below).
-        return BasicResumeFragment.newInstance(ResumeSections.fromOrdinal(position));
-    }
+
+        ResumeSections section = ResumeSections.fromOrdinal(position);
+
+        switch (section) {
+
+            case BASICS:
+                break;
+            case AWARDS:
+                break;
+            case EDUCATION:
+                break;
+            case INTERESTS:
+                break;
+            case LANGUAGES:
+                break;
+            case PUBLICATIONS:
+                break;
+            case REFERENCES:
+                break;
+            case SKILLS:
+                break;
+            case VOLUNTEER:
+                break;
+            case WORK:
+                return WorkFragment.newInstance();
+            case PROFILES:
+                break;
+        }
+
+            // return our basic resume fragment
+            return BasicResumeFragment.newInstance(section);
+        }
 
     @Override
     public int getCount() {
