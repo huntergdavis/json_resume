@@ -4,7 +4,7 @@
     "label": "Programmer, Author, Entrepeneur, Composer",
     "picture": "http://www.hunterdavis.com/wp-content/uploads/2007/12/hunterdavisqr.png",
     "email": "hunter@hunterdavis.com",
-    "phone": "available upon request",
+    "phone": "",
     "website": "www.hunterdavis.com",
     "summary": " I write books, release software, hack on hardware, ponder ideas and generally have a good time.",
     "location": {
@@ -18,12 +18,12 @@
       {
         "network": "Twitter",
         "username": "huntergdavis",
-        "url": "twitter.com/huntergdavis"
+        "url": "http://www.twitter.com/huntergdavis"
       },
       {
         "network": "Personal Blog",
         "username": "Hunter Davis",
-        "url": "www.hunterdavis.com"
+        "url": "http://www.hunterdavis.com"
       },
       {
         "network": "GitHub",
@@ -32,6 +32,14 @@
       }
     ]
   },
+    "awards" : [
+    {
+        "awarder" : "University of Evansville",
+        "date" : "5/1/2003",
+        "summary" : "Awarded the top award for my senior thesis project on particle engines.",
+        "title" : "Most Outstanding Project In Computer Science"
+    }
+    ],
   "work": [
     {
       "company": "Rhapsody International",
