@@ -7,8 +7,11 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 import com.hunterdavis.jsonresumeviewer.fragment.AwardsFragment;
 import com.hunterdavis.jsonresumeviewer.fragment.BasicsResumeFragment;
+import com.hunterdavis.jsonresumeviewer.fragment.EducationFragment;
+import com.hunterdavis.jsonresumeviewer.fragment.InterestsFragment;
 import com.hunterdavis.jsonresumeviewer.fragment.TextResumeFragment;
 import com.hunterdavis.jsonresumeviewer.fragment.WorkFragment;
+import com.hunterdavis.jsonresumeviewer.types.Interests;
 
 import java.util.Locale;
 
@@ -36,9 +39,9 @@ public class ResumePagerAdapter extends FragmentPagerAdapter {
             case AWARDS:
                 return AwardsFragment.newInstance();
             case EDUCATION:
-                break;
+                return EducationFragment.newInstance();
             case INTERESTS:
-                break;
+                return InterestsFragment.newInstance();
             case LANGUAGES:
                 break;
             case PUBLICATIONS:
