@@ -19,6 +19,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
+import android.text.TextUtils;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -126,6 +127,15 @@ public class JsonResumeActivity extends ActionBarActivity implements ActionBar.T
                     actionBar.newTab()
                             .setText(mResumePagerAdapter.getPageTitle(i))
                             .setTabListener(this));
+        }
+
+        // just a little niceness
+        if(resume != null) {
+            if(resume.getBasics() != null) {
+                if(!TextUtils.isEmpty(resume.getBasics().getName())) {
+                    getSupportActionBar().setTitle(resume.getBasics().getName());
+                }
+            }
         }
     }
 
