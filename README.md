@@ -13,6 +13,9 @@ Fork this repo and add new features to the app to make your resume oh so cool.  
 End User:
 View resume.JSON files in a more intuitive mobile format.
 
+Download on the Google Play Store at:
+https://play.google.com/store/apps/details?id=com.hunterdavis.jsonresumeviewer
+
 # json_resume
 A slightly terse resume using the resume.json format
 As usual, go to hunterdavis.com to get a more complete picture of the past 15 years.
