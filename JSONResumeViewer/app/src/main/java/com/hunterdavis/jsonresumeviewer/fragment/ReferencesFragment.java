@@ -12,27 +12,27 @@ import android.widget.TextView;
 
 import com.hunterdavis.jsonresumeviewer.JsonResumeActivity;
 import com.hunterdavis.jsonresumeviewer.R;
-import com.hunterdavis.jsonresumeviewer.types.Interests;
+import com.hunterdavis.jsonresumeviewer.types.References;
 
 import java.util.List;
 
 /**
  * Created by hunter on 2/18/15.
  */
-public class InterestsFragment extends ListFragment {
+public class ReferencesFragment extends ListFragment {
 
     /**
      * Returns a new instance of this fragment for the given section
      * number.
      */
-    public static InterestsFragment newInstance() {
-        InterestsFragment fragment = new InterestsFragment();
+    public static ReferencesFragment newInstance() {
+        ReferencesFragment fragment = new ReferencesFragment();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
     }
 
-    public InterestsFragment() {
+    public ReferencesFragment() {
 
     }
 
@@ -40,9 +40,9 @@ public class InterestsFragment extends ListFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         if(JsonResumeActivity.resume != null) {
-            if (JsonResumeActivity.resume.getInterests() != null) {
-                InterestsAdapter adapter = new InterestsAdapter(
-                        inflater.getContext(), JsonResumeActivity.resume.getInterests());
+            if (JsonResumeActivity.resume.getReferences() != null) {
+                ReferencesAdapter adapter = new ReferencesAdapter(
+                        inflater.getContext(), JsonResumeActivity.resume.getReferences());
                 setListAdapter(adapter);
             }
         }
@@ -50,9 +50,9 @@ public class InterestsFragment extends ListFragment {
         return super.onCreateView(inflater, container, savedInstanceState);
     }
 
-    private class InterestsAdapter extends ArrayAdapter<Interests> {
+    private class ReferencesAdapter extends ArrayAdapter<References> {
 
-        public InterestsAdapter(Context context, List<Interests> items) {
+        public ReferencesAdapter(Context context, List<References> items) {
             super(context, R.layout.two_line_list_item, items);
         }
 
@@ -67,20 +67,20 @@ public class InterestsFragment extends ListFragment {
                 // initialize the view holder
                 viewHolder = new WorkViewHolder();
                 viewHolder.name = (TextView) convertView.findViewById(R.id.name);
-                viewHolder.keywords = (TextView) convertView.findViewById(R.id.keywords);
+                viewHolder.reference = (TextView) convertView.findViewById(R.id.keywords);
             } else {
                 // recycle the already inflated view
                 viewHolder = (WorkViewHolder) convertView.getTag();
             }
 
             // update the item view
-            final Interests item = getItem(position);
+            final References item = getItem(position);
 
             if(!TextUtils.isEmpty(item.getName())) {
                 viewHolder.name.setText(item.getName());
             }
-            if(!TextUtils.isEmpty(item.getKeywordListTextually())) {
-                viewHolder.keywords.setText(item.getKeywordListTextually());
+            if(!TextUtils.isEmpty(item.getReference())) {
+                viewHolder.reference.setText(item.getReference());
             }
 
             return convertView;
@@ -93,7 +93,7 @@ public class InterestsFragment extends ListFragment {
      */
     private class WorkViewHolder {
         TextView name;
-        TextView keywords;
+        TextView reference;
 
     }
 }

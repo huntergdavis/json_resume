@@ -9,9 +9,13 @@ import com.hunterdavis.jsonresumeviewer.fragment.AwardsFragment;
 import com.hunterdavis.jsonresumeviewer.fragment.BasicsResumeFragment;
 import com.hunterdavis.jsonresumeviewer.fragment.EducationFragment;
 import com.hunterdavis.jsonresumeviewer.fragment.InterestsFragment;
+import com.hunterdavis.jsonresumeviewer.fragment.LanguagesFragment;
+import com.hunterdavis.jsonresumeviewer.fragment.PublicationsFragment;
+import com.hunterdavis.jsonresumeviewer.fragment.ReferencesFragment;
 import com.hunterdavis.jsonresumeviewer.fragment.TextResumeFragment;
 import com.hunterdavis.jsonresumeviewer.fragment.WorkFragment;
 import com.hunterdavis.jsonresumeviewer.types.Interests;
+import com.hunterdavis.jsonresumeviewer.types.Publications;
 
 import java.util.Locale;
 
@@ -43,11 +47,11 @@ public class ResumePagerAdapter extends FragmentPagerAdapter {
             case INTERESTS:
                 return InterestsFragment.newInstance();
             case LANGUAGES:
-                break;
+                return LanguagesFragment.newInstance();
             case PUBLICATIONS:
-                break;
+                return PublicationsFragment.newInstance();
             case REFERENCES:
-                break;
+                return ReferencesFragment.newInstance();
             case SKILLS:
                 break;
             case VOLUNTEER:
@@ -64,7 +68,9 @@ public class ResumePagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        // Show 3 total pages.
+        if(JsonResumeActivity.resume == null) {
+            return 1;
+        }
         return 11;
     }
 
@@ -75,7 +81,11 @@ public class ResumePagerAdapter extends FragmentPagerAdapter {
 
         switch (section) {
             case BASICS:
-                return adapterContext.getString(R.string.title_basics).toUpperCase(l);
+                if(JsonResumeActivity.resume == null) {
+                    return adapterContext.getString(R.string.title_load).toUpperCase(l);
+                }else {
+                    return adapterContext.getString(R.string.title_basics).toUpperCase(l);
+                }
             case AWARDS:
                 return adapterContext.getString(R.string.title_awards).toUpperCase(l);
             case EDUCATION:

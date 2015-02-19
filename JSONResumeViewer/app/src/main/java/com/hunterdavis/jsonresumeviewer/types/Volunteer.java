@@ -1,6 +1,8 @@
 
 package com.hunterdavis.jsonresumeviewer.types;
 
+import android.text.TextUtils;
+
 import java.util.List;
 
 public class Volunteer{
@@ -26,15 +28,7 @@ public class Volunteer{
     }
 
     public String getHighlightListTextually() {
-        String ret = "";
-
-        if(highlights != null) {
-            for (String highlight : highlights) {
-                ret += (highlight.toString() + "," + '\'');
-            }
-        }
-
-        return ret;
+        return TextUtils.join(",", highlights);
     }
 
     public String getEndDate(){

@@ -1,6 +1,8 @@
 package com.hunterdavis.jsonresumeviewer.fragment;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
 import android.text.TextUtils;
@@ -12,27 +14,29 @@ import android.widget.TextView;
 
 import com.hunterdavis.jsonresumeviewer.JsonResumeActivity;
 import com.hunterdavis.jsonresumeviewer.R;
+import com.hunterdavis.jsonresumeviewer.types.Awards;
 import com.hunterdavis.jsonresumeviewer.types.Interests;
+import com.hunterdavis.jsonresumeviewer.types.Languages;
 
 import java.util.List;
 
 /**
  * Created by hunter on 2/18/15.
  */
-public class InterestsFragment extends ListFragment {
+public class LanguagesFragment extends ListFragment {
 
     /**
      * Returns a new instance of this fragment for the given section
      * number.
      */
-    public static InterestsFragment newInstance() {
-        InterestsFragment fragment = new InterestsFragment();
+    public static LanguagesFragment newInstance() {
+        LanguagesFragment fragment = new LanguagesFragment();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
     }
 
-    public InterestsFragment() {
+    public LanguagesFragment() {
 
     }
 
@@ -40,9 +44,9 @@ public class InterestsFragment extends ListFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         if(JsonResumeActivity.resume != null) {
-            if (JsonResumeActivity.resume.getInterests() != null) {
-                InterestsAdapter adapter = new InterestsAdapter(
-                        inflater.getContext(), JsonResumeActivity.resume.getInterests());
+            if (JsonResumeActivity.resume.getLanguages() != null) {
+                LanguagesAdapter adapter = new LanguagesAdapter(
+                        inflater.getContext(), JsonResumeActivity.resume.getLanguages());
                 setListAdapter(adapter);
             }
         }
@@ -50,9 +54,9 @@ public class InterestsFragment extends ListFragment {
         return super.onCreateView(inflater, container, savedInstanceState);
     }
 
-    private class InterestsAdapter extends ArrayAdapter<Interests> {
+    private class LanguagesAdapter extends ArrayAdapter<Languages> {
 
-        public InterestsAdapter(Context context, List<Interests> items) {
+        public LanguagesAdapter(Context context, List<Languages> items) {
             super(context, R.layout.two_line_list_item, items);
         }
 
@@ -66,21 +70,21 @@ public class InterestsFragment extends ListFragment {
                 convertView = inflater.inflate(R.layout.two_line_list_item, parent, false);
                 // initialize the view holder
                 viewHolder = new WorkViewHolder();
-                viewHolder.name = (TextView) convertView.findViewById(R.id.name);
-                viewHolder.keywords = (TextView) convertView.findViewById(R.id.keywords);
+                viewHolder.language = (TextView) convertView.findViewById(R.id.name);
+                viewHolder.fluency = (TextView) convertView.findViewById(R.id.keywords);
             } else {
                 // recycle the already inflated view
                 viewHolder = (WorkViewHolder) convertView.getTag();
             }
 
             // update the item view
-            final Interests item = getItem(position);
+            final Languages item = getItem(position);
 
-            if(!TextUtils.isEmpty(item.getName())) {
-                viewHolder.name.setText(item.getName());
+            if(!TextUtils.isEmpty(item.getFluency())) {
+                viewHolder.fluency.setText(item.getFluency());
             }
-            if(!TextUtils.isEmpty(item.getKeywordListTextually())) {
-                viewHolder.keywords.setText(item.getKeywordListTextually());
+            if(!TextUtils.isEmpty(item.getLanguage())) {
+                viewHolder.language.setText(item.getLanguage());
             }
 
             return convertView;
@@ -92,8 +96,8 @@ public class InterestsFragment extends ListFragment {
      * convenience viewHolder pattern
      */
     private class WorkViewHolder {
-        TextView name;
-        TextView keywords;
+        TextView language;
+        TextView fluency;
 
     }
 }

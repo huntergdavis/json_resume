@@ -97,11 +97,27 @@ public class WorkFragment extends ListFragment {
                 new IconDownloadTask(viewHolder.workImageAndWebsiteLauncher).execute(favIconString);
             }
 
-            viewHolder.businessName.setText(item.getCompany());
-            viewHolder.jobTitle.setText(item.getPosition());
-            viewHolder.startAndEndDate.setText("" + item.getStartDate() + " " + getString(R.string.through) + " " + item.getEndDate());
-            viewHolder.summary.setText(item.getSummary());
-            viewHolder.highlights.setText(item.getHighlightListTextually());
+            if(!TextUtils.isEmpty(item.getCompany())) {
+                viewHolder.businessName.setText(item.getCompany());
+            }
+
+            if(!TextUtils.isEmpty(item.getPosition())) {
+                viewHolder.jobTitle.setText(item.getPosition());
+            }
+
+            if(!TextUtils.isEmpty(item.getStartDate())) {
+             if(!TextUtils.isEmpty(item.getEndDate())) {
+                 viewHolder.startAndEndDate.setText("" + item.getStartDate() + " " + getString(R.string.through) + " " + item.getEndDate());
+             }
+            }
+
+            if(!TextUtils.isEmpty(item.getSummary())) {
+                viewHolder.summary.setText(item.getSummary());
+            }
+
+            if(!TextUtils.isEmpty(item.getHighlightListTextually())) {
+                viewHolder.highlights.setText(item.getHighlightListTextually());
+            }
 
 
             return convertView;

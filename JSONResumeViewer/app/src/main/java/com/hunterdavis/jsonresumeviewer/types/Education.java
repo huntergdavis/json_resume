@@ -1,6 +1,8 @@
 
 package com.hunterdavis.jsonresumeviewer.types;
 
+import android.text.TextUtils;
+
 import java.util.List;
 
 public class Education{
@@ -27,15 +29,7 @@ public class Education{
     }
 
     public String getCoursesListTextually() {
-        String ret = "";
-
-        if(courses != null) {
-            for (String course : courses) {
-                ret += (course + "," + '\'');
-            }
-        }
-
-        return ret;
+        return TextUtils.join(",", courses);
     }
 
     public String getArea(){

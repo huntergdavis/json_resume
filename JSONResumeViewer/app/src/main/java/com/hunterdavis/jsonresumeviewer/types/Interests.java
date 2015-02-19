@@ -1,6 +1,8 @@
 
 package com.hunterdavis.jsonresumeviewer.types;
 
+import android.text.TextUtils;
+
 import java.util.List;
 
 public class Interests{
@@ -16,15 +18,7 @@ public class Interests{
     }
 
     public String getKeywordListTextually() {
-        String ret = "";
-
-        if(keywords != null) {
-            for (String keyword : keywords) {
-                ret += (keyword.toString() + "," + '\'');
-            }
-        }
-
-        return ret;
+        return TextUtils.join(",",keywords);
     }
 
     public List getKeywords(){

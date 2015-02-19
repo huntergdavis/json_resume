@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -79,10 +80,18 @@ public class AwardsFragment extends ListFragment {
             // update the item view
             final Awards item = getItem(position);
 
-            viewHolder.awarder.setText(item.getAwarder());
-            viewHolder.date.setText(item.getDate());
-            viewHolder.summary.setText(item.getSummary());
-            viewHolder.title.setText(item.getTitle());
+            if(!TextUtils.isEmpty(item.getAwarder())) {
+                viewHolder.awarder.setText(item.getAwarder());
+            }
+            if(!TextUtils.isEmpty(item.getDate())) {
+                viewHolder.date.setText(item.getDate());
+            }
+            if(!TextUtils.isEmpty(item.getSummary())) {
+                viewHolder.summary.setText(item.getSummary());
+            }
+            if(!TextUtils.isEmpty(item.getTitle())) {
+                viewHolder.title.setText(item.getTitle());
+            }
 
             return convertView;
         }
