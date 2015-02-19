@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,7 +44,7 @@ public class BasicsResumeFragment extends Fragment {
             final Basics basics =JsonResumeActivity.resume.getBasics();
             if(null != basics) {
                 ImageView profileImage = (ImageView) rootView.findViewById(R.id.profileImage);
-                if(basics.getPicture() != null) {
+                if(!TextUtils.isEmpty(basics.getPicture())) {
                     if(profileImage != null) {
                         profileImage.setVisibility(View.VISIBLE);
                         Picasso.with(container.getContext())
@@ -53,8 +54,6 @@ public class BasicsResumeFragment extends Fragment {
                 }else {
                     profileImage.setVisibility(View.GONE);
                 }
-
-
 
                 // compose email with email click
                 if(!TextUtils.isEmpty(basics.getEmail())) {

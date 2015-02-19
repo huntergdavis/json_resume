@@ -1,10 +1,16 @@
 package com.hunterdavis.jsonresumeviewer;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.UnsupportedEncodingException;
 import java.util.Locale;
 
 import android.app.Activity;
+import android.content.ContentResolver;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -35,10 +41,45 @@ public class JsonResumeActivity extends ActionBarActivity implements ActionBar.T
     public static Resume resume = null;
     public static OkHttpClient client = null;
 
+    private static boolean ignoreIntent = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_json_resume);
+
+        Intent intent = getIntent();
+        String action = intent.getAction();
+
+        if(ignoreIntent) {
+            ignoreIntent = false;
+        }else {
+            if (action.compareTo(Intent.ACTION_VIEW) == 0) {
+                String scheme = intent.getScheme();
+                ContentResolver resolver = getContentResolver();
+
+                if (scheme.compareTo(ContentResolver.SCHEME_FILE) == 0) {
+                    Uri uri = intent.getData();
+
+                    boolean intentResolutionFailed = false;
+                    InputStream input = null;
+                    try {
+                        input = resolver.openInputStream(uri);
+                    } catch (FileNotFoundException e) {
+                        intentResolutionFailed = true;
+                    }
+                    try {
+                        resume = JsonResumeParser.parseInputStreamForJsonResume(input);
+                    } catch (UnsupportedEncodingException e) {
+                        intentResolutionFailed = true;
+                    }
+
+                    if (!intentResolutionFailed) {
+                        // this.recreate();
+                    }
+                }
+            }
+        }
 
 
         // implement our okhttp cache for work page.. ugh ico files..!
@@ -107,10 +148,9 @@ public class JsonResumeActivity extends ActionBarActivity implements ActionBar.T
                 e.printStackTrace();
             }
 
-
             // recreate everything
+            ignoreIntent = true;
             this.recreate();
-            return true;
         }
 
         return super.onOptionsItemSelected(item);
