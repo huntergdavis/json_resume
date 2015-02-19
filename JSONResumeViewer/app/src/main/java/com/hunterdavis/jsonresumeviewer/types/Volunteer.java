@@ -28,7 +28,7 @@ public class Volunteer{
     }
 
     public String getHighlightListTextually() {
-        return TextUtils.join(",", highlights);
+        return TextUtils.join("\n", highlights);
     }
 
     public String getEndDate(){

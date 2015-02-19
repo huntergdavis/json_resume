@@ -10,9 +10,12 @@ import com.hunterdavis.jsonresumeviewer.fragment.BasicsResumeFragment;
 import com.hunterdavis.jsonresumeviewer.fragment.EducationFragment;
 import com.hunterdavis.jsonresumeviewer.fragment.InterestsFragment;
 import com.hunterdavis.jsonresumeviewer.fragment.LanguagesFragment;
+import com.hunterdavis.jsonresumeviewer.fragment.ProfileFragment;
 import com.hunterdavis.jsonresumeviewer.fragment.PublicationsFragment;
 import com.hunterdavis.jsonresumeviewer.fragment.ReferencesFragment;
+import com.hunterdavis.jsonresumeviewer.fragment.SkillsFragment;
 import com.hunterdavis.jsonresumeviewer.fragment.TextResumeFragment;
+import com.hunterdavis.jsonresumeviewer.fragment.VolunteerFragment;
 import com.hunterdavis.jsonresumeviewer.fragment.WorkFragment;
 import com.hunterdavis.jsonresumeviewer.types.Interests;
 import com.hunterdavis.jsonresumeviewer.types.Publications;
@@ -53,13 +56,13 @@ public class ResumePagerAdapter extends FragmentPagerAdapter {
             case REFERENCES:
                 return ReferencesFragment.newInstance();
             case SKILLS:
-                break;
+                return SkillsFragment.newInstance();
             case VOLUNTEER:
-                break;
+                return VolunteerFragment.newInstance();
             case WORK:
                 return WorkFragment.newInstance();
             case PROFILES:
-                break;
+                return ProfileFragment.newInstance();
         }
 
             // return our basic resume fragment

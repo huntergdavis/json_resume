@@ -4,7 +4,7 @@
     <string name="app_name">JSON Resume Viewer</string>
 
     <string name="title_basics">Basics</string>
-    <string name="title_load">Please Load Resume.JSON</string>
+    <string name="title_load">Please Load A Resume.JSON File</string>
     <string name="title_awards">Awards</string>
     <string name="title_education">Education</string>
     <string name="title_interests">Interests</string>

@@ -40,6 +40,20 @@
         "title" : "Most Outstanding Project In Computer Science"
     }
     ],
+   "volunteer": [
+          {
+            "organization": "Hackaway Charity",
+            "position": "Director",
+            "website": "http://www.hunterdavis.com",
+            "startDate": "2008-12-25",
+            "endDate": "20010-12-25",
+            "summary": "Beginning as a holiday charity, I started a charity to send modified devices to needy hackers around the world..",
+            "highlights": [
+              "Sent modified devices to dozens of countries.",
+              "Assisted hackers and hacker-spaces world wide."
+            ]
+          }
+  ],
   "work": [
     {
       "company": "Rhapsody International",
