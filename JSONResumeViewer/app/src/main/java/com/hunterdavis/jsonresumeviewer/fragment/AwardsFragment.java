@@ -82,15 +82,23 @@ public class AwardsFragment extends ListFragment {
 
             if(!TextUtils.isEmpty(item.getAwarder())) {
                 viewHolder.awarder.setText(item.getAwarder());
+            }else {
+                viewHolder.awarder.setText("");
             }
             if(!TextUtils.isEmpty(item.getDate())) {
                 viewHolder.date.setText(item.getDate());
+            }else {
+                viewHolder.date.setText("");
             }
             if(!TextUtils.isEmpty(item.getSummary())) {
                 viewHolder.summary.setText(item.getSummary());
+            }else {
+                viewHolder.summary.setText("");
             }
             if(!TextUtils.isEmpty(item.getTitle())) {
                 viewHolder.title.setText(item.getTitle());
+            }else {
+                viewHolder.title.setText("");
             }
 
             return convertView;

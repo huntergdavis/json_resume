@@ -99,10 +99,14 @@ public class WorkFragment extends ListFragment {
 
             if(!TextUtils.isEmpty(item.getCompany())) {
                 viewHolder.businessName.setText(item.getCompany());
+            }else {
+                viewHolder.businessName.setText("");
             }
 
             if(!TextUtils.isEmpty(item.getPosition())) {
                 viewHolder.jobTitle.setText(item.getPosition());
+            }else {
+                viewHolder.jobTitle.setText("");
             }
 
             if(!TextUtils.isEmpty(item.getStartDate())) {
@@ -113,10 +117,14 @@ public class WorkFragment extends ListFragment {
 
             if(!TextUtils.isEmpty(item.getSummary())) {
                 viewHolder.summary.setText(item.getSummary());
+            }else {
+                viewHolder.summary.setText("");
             }
 
             if(!TextUtils.isEmpty(item.getHighlightListTextually())) {
                 viewHolder.highlights.setText(item.getHighlightListTextually());
+            }else {
+                viewHolder.highlights.setText("");
             }
 
 
